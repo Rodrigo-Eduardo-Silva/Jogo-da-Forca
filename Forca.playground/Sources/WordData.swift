@@ -13,9 +13,9 @@ public   let animal: [String]
     
     
     }
-    //public  func getRandomWord() -> animal {
-  //     let index = Int(arc4random_uniform(UInt32(animal.count)))
-  //      let choiceWord : String = animal[index]
-  //      return choiceWord
- // }
+    public  func getRandomWord() -> String {
+       let index = Int(arc4random_uniform(UInt32(animal.count)))
+       let choiceWord : String = animal[index]
+        return choiceWord
+ }
 }
