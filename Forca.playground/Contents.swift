@@ -2,10 +2,11 @@ import UIKit
 import Foundation
 
 public func chooseWord(){
-    let json = WordData()
-    let list : [String] = json.animal //["Camelo","Sapo","Cachorro","Passaro","Gato","Tamandua"]
-    let randomitem = Int(arc4random_uniform(UInt32(list.count)))
-    let word : String =   list[randomitem]
+ //   let json = WordData()
+ //   let list : [String] = json.animal //["Camelo","Sapo","Cachorro","Passaro","Gato","Tamandua"]
+ //   let randomitem = Int(arc4random_uniform(UInt32(list.count)))
+ //   let word : String =   list[randomitem]
+    let word : String = WordData.init().getRandomWord()
     
     let letter : [String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","u","t","v","w","x","y","z"]
     
